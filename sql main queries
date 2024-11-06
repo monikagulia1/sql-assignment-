@@ -1,0 +1,47 @@
+In the context of databases, a query is a request for data or information from a database.
+metadata refers to the data that describes other data within that database.
+
+A query is a specific request made to a database to retrieve, manipulate, or interact with data. Queries are typically written in SQL (Structured Query Language) for relational databases. 
+
+Metadata in a database context refers to the information that describes the structure, organization, and characteristics of the data stored in the database. It provides context and meaning to the data, helping users understand how to use and interpret it. 
+
+
+Retrieving information:SELECT from_columns FROM table WHERE conditions;
+
+All values:SELECT * FROM table;
+
+Some values:SELECT * FROM table WHERE rec_name = “value”;
+
+Multiple criteria:SELECT * FROM table WHERE rec1=”value1” AND rec2=”value2”;
+
+Selecting specific columns:SELECT column_name FROM table;
+
+Retrieving unique output records:SELECT DISTINCT column_name FROM table;
+
+Sorting:SELECT col1, col2 FROM table ORDER BY col2;
+
+Sorting backward:SELECT col1, col2 FROM table ORDER BY col2 DESC;
+
+Counting rows:SELECT COUNT(*) FROM table;
+
+Grouping with counting:SELECT owner, COUNT(*) FROM table GROUP BY owner;
+
+Maximum value:SELECT MAX(col_name) AS label FROM table;
+
+Selecting from multiple tables (Join same table using alias w/”AS”):SELECT pet.name, comment FROM pet, event WHERE pet.name = event.name;
+
+Metadata
+Selecting a database:USE database;
+
+Listing databases:SHOW DATABASES;
+
+Listing tables in a database:SHOW TABLES;
+
+Describing the format of a table:DESCRIBE table;
+
+Creating a database:CREATE DATABASE db_name;
+
+Dropping a database:DROP DATABASE db_name;
+
+
+
